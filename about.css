@@ -111,7 +111,7 @@ nav ul li a:hover {
 
 .content{
   position: relative;
-  width: 1150px;
+  max-width: 1150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,3 +208,56 @@ nav ul li a:hover {
 }
 
 
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start; /* Align items to start */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack nav items vertically */
+    margin-top: 10px; /* Add space above nav items */
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px; /* Add space between nav items */
+  }
+
+  .sec-01, .sec-02, .sec-03 {
+    padding: 40px 20px; /* Reduce padding */
+  }
+
+  .main-title {
+    font-size: 2.5em; /* Reduce title size */
+  }
+
+  .content .text-box {
+    max-width: 90%; /* Allow text box to take more width */
+  }
+
+  .media-info li {
+    font-size: 1.2em; /* Reduce font size for mobile */
+  }
+
+  .media-icons a {
+    font-size: 1.5em; /* Reduce icon size for mobile */
+    margin: 10px; /* Adjust margin */
+  }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 2em; /* Further reduce title size */
+  }
+
+  .section-title {
+    font-size: 2.5em; /* Further reduce section title size */
+  }
+
+  nav ul li a {
+    font-size: 1rem; /* Reduce font size of nav links */
+  }
+}
