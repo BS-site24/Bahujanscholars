@@ -1,0 +1,104 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+          <img src="logo.png" alt="Bahujan Samaj" class="logo-image" height="50">
+          Bahujan Samaj
+      </div>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </nav>
+  
+    <section class="sec-01">
+      <div class="containers">
+        <h2 class="main-title">Bahujan Samaj</h2>
+        <div class="content">
+          <div class="image">
+            <img src="about1.jpg" alt="">
+          </div>
+          <div class="text-box">
+            <h3>About us</h3>
+            <p style="text-align: justify;">To inspire and educate youth from disadvantaged communities in India, mentoring is an indispensable process that connects young persons with experienced mentors. The rapid rise of internet-based technology has made it possible to connect mentees from India with mentors anywhere in the world. For example, the CMC (Computer Mediated Communication) model, or E-mentoring, is widely adopted and institutionalized in academic and community settings in the United States for mentoring purposes, including academic, professional, and skills-related teaching and learning interactions.</p>
+          </div>
+        </div>
+        <div class="media-icons">
+          <p style="text-align: justify;" class="sec-01">Instructional technology is a key component of the Bahujan Scholars platform. The platform will connect mentees with mentors, motivating youth to pursue higher education in India and abroad. Bahujan Scholars provide learning resources, group and one-on-one mentoring, and a social platform for organizing educational and professional events. We are developing an online directory of group members to facilitate collaboration and support. The directory will be accessible only to members. </p>
+        </div>
+      </div>
+    </section>
+    <section class="sec-02">
+      <div class="containers">
+        <h3 class="section-title">Process and Project</h3>
+        <div class="content">
+          <div class="image">
+            <img src="about2.jfif" alt="">
+          </div>
+          <div class="info">
+            <!-- <h4 class="info-title">MACS</h4> -->
+            <p style="text-align: justify;">First, mentors and mentees enroll on the Bahujan Scholars platform, which then selects a suitable mentor for each mentee. After matching, an online orientation provides an overview of the program. Mentor-mentee communication proceeds based on availability, with the mentor offering guidance to support the mentee. Bahujan Scholars collects monthly feedback from mentees to evaluate the process and ensure both parties' needs are met. In 2023, Bahujan Scholars collaborated with the National Youth Equity Forum (NYEF), a non-profit supporting first-generation learners from excluded communities in North India, to launch a pilot project called "Bahujan Mentoring." This project matched ten mentors from Bahujan Scholars with ten mentees from NYEF based on academic and professional backgrounds. Mentors, graduate students, and faculty members from North America, mentored mentees in India from March to August 2024.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec-03">
+      <div class="containers">
+        <h3 class="section-title">Get in touch</h3>
+        <div class="content">
+          <div class="media-info">
+            <li><a href="#"><i class="fab fa-linkedin"></i>Bahujan Samaj</a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i>Bahujan Samaj</a></li>
+            <li><a href="contact.html"><i class="fab fa-patreon"></i> Contact Us</a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i>Bahujan Samaj</a></li>
+            <li><a href="#"><i class="fa fa-envelope"></i>Bahujan Samaj</a></li>
+          </div>
+          <div class="image">
+            <img src="contact.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div style="text-align: center;">
+        <p>&copy; 2024 <a href="https://github.com/shibli2316/">Shibli</a>. All rights reserved.</p>
+    </div>
+    </footer>
+
+    
+
+    <script>
+      //common reveal options to create reveal animations
+      ScrollReveal({
+        //reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400
+      });
+
+      //target elements, and specify options to create reveal animations
+      ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+      ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom' });
+      ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+      ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+      ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
+      ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+    </script>
+
+  </body>
+</html>

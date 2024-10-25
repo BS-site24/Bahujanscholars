@@ -1,0 +1,585 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: transparent; /* Transparent background to merge with hero */
+    z-index: 10; /* Ensure it stays on top of the hero section */
+    transition: background-color 0.3s ease;
+
+   
+    width: 100%; /* Ensure the navbar takes the full width without overflowing */
+    box-sizing: border-box; /* Include padding in element's total width */
+    overflow-x: hidden; /* Prevent any overflow in the horizontal direction */
+}
+
+nav.scrolled {
+    background-color: rgba(0, 0, 0, 0.7); /* Add a background when the user scrolls */
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff; 
+    padding: 10px;/* White text to contrast the hero image */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* White color for the links */
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav .logo .logo-image {
+    width: 40px; /* Adjust the size of the logo */
+    height: auto;
+    margin-right: 10px; /* Add some spacing between the logo and the text */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+
+
+
+
+/* Hero Section Styling */
+
+
+
+/* Hero Section Styling */
+.hero {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+}
+
+.hero-image {
+    flex: 1;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without overflow */
+    object-position: center;
+}
+
+.hero-text {
+    flex: 1;
+    padding: 20px; /* Add some padding for spacing */
+    position: absolute;
+    top: 20px; /* Moves the text to the top */
+    left: 20px; /* Moves the text to the left */
+    transform: translateY(0); /* Remove the previous translate */
+    font-family: 'Times New Roman', serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    max-width: 35vw;
+    text-align: left; /* Align text to the left */
+}
+
+
+.hero-text p {
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: 1.6;
+    text-transform: none;
+}
+
+/* Scroll reveal effect */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ensure the image is fully contained */
+.hero-image img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Contains the image within the container without overflow */
+    object-position: center;
+}
+
+/* Responsive styling for smaller screens */
+@media screen and (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-image img {
+        width: 100vw;
+        height: 50vh; /* Adjusts the image size for smaller screens */
+    }
+
+    .hero-text {
+        left: 10vw;
+        top: 55%;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+/* Gallery Section */
+.gallery-section {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9; /* Match background */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+    grid-gap: 20px;
+    width: 80%; /* Center the gallery and give it a fixed width */
+    max-width: 1200px; /* Max width for large screens */
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1; /* Ensure square images */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure image fills the container without distortion */
+    transition: all 0.5s ease-in-out;
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    font-size: 1.2rem; /* Slightly smaller font to fit better */
+    text-align: center;
+    padding: 20px;
+    word-wrap: break-word; /* Ensure long words break to fit */
+    overflow: hidden; /* Prevent overflow of text */
+    box-sizing: border-box; /* Ensure padding doesn't exceed container size */
+}
+
+
+.gallery-item:hover img {
+    filter: blur(5px);
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1;
+}
+
+/* Reveal on scroll animation */
+.gallery-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.gallery-item.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Gallery */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: repeat(1, 1fr); /* One column on very small screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.about-program {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+}
+
+.about-program p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Content Section */
+.content-section {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.feature-list, .pricing-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.feature, .pricing-plan {
+    max-width: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Footer Section */
+/* Footer Section Styling */
+footer {
+    background-color: #f7f9fc;
+    color: #555;
+    padding: 40px 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.footer-content div {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-logo h3 {
+    font-size: 24px;
+    color: #007bff;
+}
+
+.footer-logo p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.footer-links h4, .footer-social h4, .footer-contact h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.footer-links ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li, .footer-social ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a, .footer-social ul li a {
+    color: #555;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links ul li a:hover, .footer-social ul li a:hover {
+    color: #007bff;
+}
+
+/* Font Awesome Icons styling */
+.footer-social ul {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social ul li a {
+    color: #555;
+    font-size: 24px; /* Size of the icons */
+    transition: color 0.3s ease;
+}
+
+.footer-social ul li a:hover {
+    color: #007bff; /* Change to soft blue on hover */
+}
+
+.footer-contact p {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    color: #888;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-content div {
+        margin-bottom: 30px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-content div {
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature-list, .pricing-list {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+
+
+
+/* FAQ Section Styling */
+.sec-faq {
+    padding: 80px 100px;
+    background-color: #f8f9fa;
+  }
+  
+  .section-title {
+    font-size: 3em;
+    color: #111111;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .faq-question {
+    background: #6d96ab;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    background-color: #f2f2f2;
+    transition: max-height 0.4s ease;
+  }
+  
+  .faq-answer p {
+    padding: 15px 0;
+    color: #111;
+  }
+  
+  .faq-item.active .faq-answer {
+    max-height: 200px; /* Adjust this value as needed */
+  }
+  
+  .faq-item.active .faq-question i {
+    transform: rotate(180deg);
+  }
+  
+  /* FAQ Icons */
+  .faq-question i {
+    transition: transform 0.4s;
+  }
+  
