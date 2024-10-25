@@ -1,4 +1,4 @@
-// Reveal on scroll
+
 window.addEventListener('scroll', function () {
     const reveals = document.querySelectorAll('.scroll-reveal');
 
@@ -16,7 +16,7 @@ window.addEventListener('scroll', function () {
 });
 
 
-// Scroll reveal effect
+
 window.addEventListener('scroll', function () {
     const reveals = document.querySelectorAll('.scroll-reveal');
 

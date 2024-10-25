@@ -52,30 +52,30 @@ nav {
     top: 0;
     left: 0;
     padding: 20px;
-    background-color: transparent; /* Transparent background to merge with hero */
-    z-index: 10; /* Ensure it stays on top of the hero section */
+    background-color: transparent; 
+    z-index: 10; 
     transition: background-color 0.3s ease;
 
    
-    width: 100%; /* Ensure the navbar takes the full width without overflowing */
-    box-sizing: border-box; /* Include padding in element's total width */
-    overflow-x: hidden; /* Prevent any overflow in the horizontal direction */
+    width: 100%;
+    box-sizing: border-box; 
+    overflow-x: hidden; 
 }
 
 nav.scrolled {
-    background-color: rgba(0, 0, 0, 0.7); /* Add a background when the user scrolls */
+    background-color: rgba(0, 0, 0, 0.7); 
 }
 
 nav .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: #ffffff; 
-    padding: 10px;/* White text to contrast the hero image */
+    padding: 10px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff; /* White color for the links */
+    color: #ffffff; 
     font-size: 1.2rem;
     transition: color 0.3s;
 }
@@ -94,9 +94,9 @@ nav .logo {
 }
 
 nav .logo .logo-image {
-    width: 40px; /* Adjust the size of the logo */
+    width: 40px;
     height: auto;
-    margin-right: 10px; /* Add some spacing between the logo and the text */
+    margin-right: 10px; 
 }
 
 nav ul {
@@ -123,16 +123,9 @@ nav ul li a:hover {
 
 
 
-
-
-/* Hero Section Styling */
-
-
-
-/* Hero Section Styling */
 .hero {
     display: flex;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
     position: relative;
     overflow: hidden;
     align-items: center;
@@ -148,17 +141,17 @@ nav ul li a:hover {
 .hero-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the container without overflow */
+    object-fit: cover; 
     object-position: center;
 }
 
 .hero-text {
     flex: 1;
-    padding: 20px; /* Add some padding for spacing */
+    padding: 20px;
     position: absolute;
-    top: 20px; /* Moves the text to the top */
-    left: 20px; /* Moves the text to the left */
-    transform: translateY(0); /* Remove the previous translate */
+    top: 20px;
+    left: 20px; 
+    transform: translateY(0); 
     font-family: 'Times New Roman', serif;
     font-size: 3rem;
     font-weight: bold;
@@ -167,7 +160,7 @@ nav ul li a:hover {
     opacity: 0;
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
     max-width: 35vw;
-    text-align: left; /* Align text to the left */
+    text-align: left; 
 }
 
 
@@ -178,7 +171,7 @@ nav ul li a:hover {
     text-transform: none;
 }
 
-/* Scroll reveal effect */
+
 .scroll-reveal {
     opacity: 0;
     transform: translateY(100px);
@@ -190,16 +183,16 @@ nav ul li a:hover {
     transform: translateY(0);
 }
 
-/* Ensure the image is fully contained */
+
 .hero-image img {
     position: relative;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Contains the image within the container without overflow */
+    object-fit: cover; 
     object-position: center;
 }
 
-/* Responsive styling for smaller screens */
+
 @media screen and (max-width: 768px) {
     .hero {
         flex-direction: column;
@@ -207,7 +200,7 @@ nav ul li a:hover {
 
     .hero-image img {
         width: 100vw;
-        height: 50vh; /* Adjusts the image size for smaller screens */
+        height: 50vh; 
     }
 
     .hero-text {
@@ -227,32 +220,32 @@ nav ul li a:hover {
 
 
 
-/* Gallery Section */
+
 .gallery-section {
     padding: 50px 0;
     display: flex;
     justify-content: center;
-    background-color: #f9f9f9; /* Match background */
+    background-color: #f9f9f9; 
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
-    width: 80%; /* Center the gallery and give it a fixed width */
-    max-width: 1200px; /* Max width for large screens */
+    width: 80%; 
+    max-width: 1200px; 
 }
 
 .gallery-item {
     position: relative;
     overflow: hidden;
-    aspect-ratio: 1; /* Ensure square images */
+    aspect-ratio: 1; 
 }
 
 .gallery-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure image fills the container without distortion */
+    object-fit: cover; 
     transition: all 0.5s ease-in-out;
 }
 
@@ -269,12 +262,12 @@ nav ul li a:hover {
     align-items: center;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-    font-size: 1.2rem; /* Slightly smaller font to fit better */
+    font-size: 1.2rem; 
     text-align: center;
     padding: 20px;
-    word-wrap: break-word; /* Ensure long words break to fit */
-    overflow: hidden; /* Prevent overflow of text */
-    box-sizing: border-box; /* Ensure padding doesn't exceed container size */
+    word-wrap: break-word;
+    overflow: hidden; 
+    box-sizing: border-box;
 }
 
 
@@ -286,7 +279,7 @@ nav ul li a:hover {
     opacity: 1;
 }
 
-/* Reveal on scroll animation */
+
 .gallery-item {
     opacity: 0;
     transform: translateY(20px);
@@ -298,16 +291,16 @@ nav ul li a:hover {
     transform: translateY(0);
 }
 
-/* Responsive Gallery */
+
 @media (max-width: 768px) {
     .gallery {
-        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 480px) {
     .gallery {
-        grid-template-columns: repeat(1, 1fr); /* One column on very small screens */
+        grid-template-columns: repeat(1, 1fr); 
     }
 }
 
@@ -354,7 +347,7 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Content Section */
+
 .content-section {
     padding: 80px 0;
     text-align: center;
@@ -386,8 +379,7 @@ nav ul li a:hover {
     transform: translateY(0);
 }
 
-/* Footer Section */
-/* Footer Section Styling */
+
 footer {
     background-color: #f7f9fc;
     color: #555;
@@ -446,7 +438,7 @@ footer {
     color: #007bff;
 }
 
-/* Font Awesome Icons styling */
+
 .footer-social ul {
     display: flex;
     gap: 10px;
@@ -454,12 +446,12 @@ footer {
 
 .footer-social ul li a {
     color: #555;
-    font-size: 24px; /* Size of the icons */
+    font-size: 24px; 
     transition: color 0.3s ease;
 }
 
 .footer-social ul li a:hover {
-    color: #007bff; /* Change to soft blue on hover */
+    color: #007bff; 
 }
 
 .footer-contact p {
@@ -506,7 +498,7 @@ footer {
 }
 
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .feature-list, .pricing-list {
         flex-direction: column;
@@ -518,7 +510,7 @@ footer {
 
 
 
-/* FAQ Section Styling */
+
 .sec-faq {
     padding: 80px 100px;
     background-color: #f8f9fa;
@@ -571,14 +563,14 @@ footer {
   }
   
   .faq-item.active .faq-answer {
-    max-height: 200px; /* Adjust this value as needed */
+    max-height: 200px; 
   }
   
   .faq-item.active .faq-question i {
     transform: rotate(180deg);
   }
   
-  /* FAQ Icons */
+  
   .faq-question i {
     transition: transform 0.4s;
   }
