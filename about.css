@@ -59,8 +59,8 @@ nav .logo {
 }
 
 nav .logo .logo-image {
-  width: 40px; 
-  height: auto;
+  width: auto; 
+  height: 80px;
   margin-right: 10px; 
 }
 
@@ -92,7 +92,7 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 80px 100px;
+  padding: 60px 100px;
   color: #000000;
 }
 
@@ -151,15 +151,7 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 
-.media-icons{
-  margin-top: 100px;
-}
 
-.media-icons a{
-  color: #fff;
-  font-size: 2em;
-  margin: 60px;
-}
 
 .section-title{
   font-size: 3em;
@@ -209,55 +201,216 @@ nav ul li a:hover {
 
 
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
-    align-items: flex-start; /* Align items to start */
+    align-items: flex-start; 
   }
 
   nav ul {
-    flex-direction: column; /* Stack nav items vertically */
-    margin-top: 10px; /* Add space above nav items */
+    flex-direction: column; 
+    margin-top: 10px;
   }
 
   nav ul li {
     margin-left: 0;
-    margin-bottom: 10px; /* Add space between nav items */
+    margin-bottom: 10px;
   }
 
-  .sec-01, .sec-02, .sec-03 {
-    padding: 40px 20px; /* Reduce padding */
-  }
 
   .main-title {
-    font-size: 2.5em; /* Reduce title size */
+    font-size: 2.5em; 
   }
 
   .content .text-box {
-    max-width: 90%; /* Allow text box to take more width */
+    max-width: 90%; 
   }
 
   .media-info li {
-    font-size: 1.2em; /* Reduce font size for mobile */
+    font-size: 1.2em;
   }
 
   .media-icons a {
-    font-size: 1.5em; /* Reduce icon size for mobile */
-    margin: 10px; /* Adjust margin */
+    font-size: 1.5em;
+    margin: 10px; 
   }
 }
 
 @media (max-width: 480px) {
   .main-title {
-    font-size: 2em; /* Further reduce title size */
+    font-size: 2em; 
   }
 
   .section-title {
-    font-size: 2.5em; /* Further reduce section title size */
+    font-size: 2.5em; 
   }
 
   nav ul li a {
-    font-size: 1rem; /* Reduce font size of nav links */
+    font-size: 1rem; 
   }
+}
+
+
+
+
+
+footer {
+  background-color: #f7f9fc;
+  color: #555;
+  padding: 40px 20px;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.footer-content div {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.footer-logo h3 {
+  font-size: 24px;
+  color: #007bff;
+}
+
+.footer-logo p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.footer-links h4, .footer-social h4, .footer-contact h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.footer-links ul, .footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li, .footer-social ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a, .footer-social ul li a {
+  color: #555;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-links ul li a:hover, .footer-social ul li a:hover {
+  color: #007bff;
+}
+
+
+.footer-social ul {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social ul li a {
+  color: #555;
+  font-size: 24px; 
+  transition: color 0.3s ease;
+}
+
+.footer-social ul li a:hover {
+  color: #007bff; 
+}
+
+.footer-contact p {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 15px;
+  color: #888;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo-image {
+  margin-right: 10px; /* Space between the logo and text */
+  height: 30px; /* Adjust as needed */
+}
+
+.footer-logo h3 {
+  font-size: 24px;
+  color: #007bff;
+  margin: 0;
+}
+
+
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .footer-content div {
+      margin-bottom: 30px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .footer-content div {
+      margin-bottom: 30px;
+  }
+}
+
+
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between the logo and the text */
+}
+
+.footer-logo-image {
+  width: 50px; /* Increase width for larger logo */
+  height: 50px; /* Increase height for larger logo */
+}
+
+.footer-logo h3 {
+  font-size: 24px;
+  color: #007bff;
+  margin: 0;
+}
+
+.footer-logo p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 5px; /* Space between title and paragraph */
 }

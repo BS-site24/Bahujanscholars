@@ -1,3 +1,5 @@
+<!-- phone and email hatana hai -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,8 +63,8 @@
 }
 
 nav .logo .logo-image {
-    width: 40px; 
-    height: auto;
+    width: auto; 
+    height: 80px;
     margin-right: 10px; 
 }
 
@@ -281,6 +283,31 @@ nav ul li a:hover {
         a{
             text-decoration: none;
         }
+
+
+        .footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the logo and the text */
+}
+
+.footer-logo-image {
+    width: 50px; /* Increase width for larger logo */
+    height: 50px; /* Increase height for larger logo */
+}
+
+.footer-logo h3 {
+    font-size: 24px;
+    color: #007bff;
+    margin: 0;
+}
+
+.footer-logo p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 5px; /* Space between title and paragraph */
+}
+
         
     </style>
 </head>
@@ -288,8 +315,8 @@ nav ul li a:hover {
     
     <nav>
         <div class="logo">
-            <img src="Logo.png" alt="Bahujan Scholar" class="logo-image" height="50">
-            Bahujan Scholar
+            <img src="Logo.png" alt="Bahujan Scholars" class="logo-image" height="50">
+            Bahujan Scholars
         </div>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -298,26 +325,6 @@ nav ul li a:hover {
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-
-    
-    <section class="contact-info">
-        <div>
-            <i class="fas fa-map-marker-alt"></i>
-            <p>ABCD America</p>
-        </div>
-        <div>
-            <i class="fas fa-phone-alt"></i>
-            <p><a href="tel:+1235235598">+1235 2355 98</a></p>
-        </div>
-        <div>
-            <i class="fas fa-envelope"></i>
-            <p><a href="mailto:info@bahujanScholar.com">info@bahujanScholar.com</a></p>
-        </div>
-        <div>
-            <i class="fas fa-globe"></i>
-            <p><a href="#">bahujanScholar.com</a></p>
-        </div>
-    </section>
 
     
     <section class="contact-section">
@@ -342,46 +349,42 @@ nav ul li a:hover {
         </div>
 
         
-        <div class="contact-image" style="background-image: url('contact2.jfif');"></div>
+        <div class="contact-image" style="background-image: url('contact.jpg');"></div>
     </section>
 
     
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <h3>Bahujan Scholar</h3>
-                <p>Your trusted partner in mentorship and professional development.</p>
+                <img src="Logo.png" alt="Bahujan Scholars Logo" class="footer-logo-image" height="40">
+                <div>
+                    <h3>Bahujan Scholars</h3>
+                    <p>Mentoring for social transformation.</p>
+                </div>
             </div>
-
+      
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-
+      
             <div class="footer-social">
                 <h4>Follow Us</h4>
                 <ul>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://docs.google.com/document/d/14VSovzMNp2oRd5kiVrv_1U0ig5dgKVRq/edit" target="_blank"><i class="fa fa-file"></i></a></li>
+                    <li><a href="https://www.youtube.com/@BahujanScholarss-up6ek" target="_blank"><i class="fab fa-youtube"></i></a></li>
                 </ul>
             </div>
-
-            <div class="footer-contact">
-                <h4>Contact Us</h4>
-                <p>Email: info@bahujanScholar.com</p>
-                <p>Phone: +123 456 7890</p>
-            </div>
         </div>
-
+      
         <div class="footer-bottom">
             <p>&copy; 2024 <a href="https://github.com/shibli2316/">Shibli</a>. All rights reserved.</p>
         </div>
-    </footer>
+      </footer>
 </body>
 </html>
