@@ -643,3 +643,70 @@ nav ul li a:hover {
     font-size: 18px;
     margin: 10px 0;
 }
+
+
+/* Mentoring Section Styling */
+.mentoring-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+}
+
+.mentoring-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    gap: 30px;
+}
+
+.mentoring-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mentoring-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.mentoring-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: #333;
+    text-align: left;
+}
+
+.mentoring-text h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.mentoring-text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.mentoring-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+.mentoring-text ul li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+}
